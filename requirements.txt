@@ -1,0 +1,10 @@
+streamlit
+langdetect
+deep-translator
+spacy
+transformers
+textblob
+pandas
+numpy
+scikit-learn
+torch
