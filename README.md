@@ -49,7 +49,7 @@ Or add your own `.txt` files in the `data/` folder.
 The pipeline was evaluated using the provided notebook/ against multilingual test cases.  
 * NER Confidence: Achieved high precision in identifying entities like "IIT Bombay" and "Paris" within translated contexts.
 * Emotion Granularity: Successfully mapped inputs to specific states (Joy, Anger, Love) with confidence scores typically $> 90\%$.
-![Emotion Distribution Chart](results/emotion_chart.png)
+![Emotion Distribution Chart](results/emotion_confidence.png)
 
 ## Key Learnings
 
