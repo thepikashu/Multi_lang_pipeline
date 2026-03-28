@@ -8,12 +8,11 @@ The pipeline is deployed using Streamlit for an interactive web interface.
 
 ## My Contributions
 
-* Built and structured the end-to-end NLP pipeline
-* Integrated language detection and translation modules
-* Implemented basic NLP analysis (tokenization, polarity, subjectivity)
-* Added transformer-based NER and sentiment analysis
-* Designed an interactive Streamlit interface
-* Tested pipeline across multiple languages
+* Moved beyond basic lexicons to implement a deep-learning inference engine using BERT-Large (NER) and DistilBERT (Emotion Classification).
+* Integrated deep-translator with langdetect to create a seamless translation-to-analysis workflow for non-English inputs (Hindi, German, French).
+* Swapped TextBlob for SpaCy to provide production-standard tokenization and noun-phrase extraction.
+* Optimized model loading with Streamlit caching and configured the backend for CUDA-accelerated GPU inference (Torch-based).
+* Created a synthetic multilingual dataset (benchmark_tests.json) and generated a performance report to verify model confidence across languages.
 
 
 ## Features
@@ -45,6 +44,12 @@ You can test with multilingual text such as:
 
 Or add your own `.txt` files in the `data/` folder.
 
+## Results
+
+The pipeline was evaluated using the provided notebook/ against multilingual test cases.  
+* NER Confidence: Achieved high precision in identifying entities like "IIT Bombay" and "Paris" within translated contexts.
+* Emotion Granularity: Successfully mapped inputs to specific states (Joy, Anger, Love) with confidence scores typically $> 90\%$.
+![Emotion Distribution Chart](results/emotion_chart.png)
 
 ## Key Learnings
 
