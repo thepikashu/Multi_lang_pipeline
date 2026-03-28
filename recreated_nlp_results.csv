@@ -1,0 +1,4 @@
+original,source_lang,translated,ner,emotion,linguistics
+I am having an ice cream.,en,I am having an ice cream.,[],"{'label': 'joy', 'score': 0.764}","{'tokens': ['I', 'am', 'having', 'an', 'ice', 'cream', '.'], 'noun_phrases': ['I', 'an ice cream']}"
+Das ist ein fantastisches Ergebnis!,de,This is a fantastic result!,[],"{'label': 'joy', 'score': 0.998}","{'tokens': ['This', 'is', 'a', 'fantastic', 'result', '!'], 'noun_phrases': ['This', 'a fantastic result']}"
+मुझे यह प्रोजेक्ट बहुत पसंद है।,hi,I love this project.,[],"{'label': 'love', 'score': 0.615}","{'tokens': ['I', 'love', 'this', 'project', '.'], 'noun_phrases': ['I', 'this project']}"
